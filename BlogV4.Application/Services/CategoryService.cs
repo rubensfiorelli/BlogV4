@@ -60,7 +60,7 @@ namespace BlogV4.Application.Services
 
             existing.SetupCategory(model.Name, model.Slug);
 
-            await _repository.Update(categoryId, existing);
+            await _repository.Update(existing);
 
             return (CategoryOutputDto)existing;
           

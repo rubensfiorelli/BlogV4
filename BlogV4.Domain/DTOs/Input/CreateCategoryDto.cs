@@ -10,6 +10,5 @@ namespace BlogV4.Domain.DTOs.Input
         public static implicit operator Category(CreateCategoryDto dto)
            => new(dto.Name, dto.Slug);
 
-
     }
 }

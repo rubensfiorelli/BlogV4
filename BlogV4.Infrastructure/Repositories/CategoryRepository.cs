@@ -80,7 +80,7 @@ namespace BlogV4.Data.Repositories
             return existing;
         }
 
-        public async Task<Category> Update(Guid categoryId, Category category)
+        public async Task<Category> Update(Category category)
         {
             try
             {

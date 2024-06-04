@@ -12,7 +12,7 @@ namespace BlogV4.IoC.Services
         public string GenerateToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(Configuration.JwtKey);
+            var key = Encoding.UTF8.GetBytes(Configuration.JwtKey);
             var claims = user.GetClaims();
             var tokenDescriptor = new SecurityTokenDescriptor
             {

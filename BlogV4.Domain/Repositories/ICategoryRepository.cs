@@ -7,7 +7,7 @@ namespace BlogV4.Domain.Repositories
         Task<List<Category>> GetCategories();
         Task<Category> GetCategoryId(Guid categoryId);
         Task AddAsync(Category model);
-        Task<Category> Update(Guid categoryId, Category category);
+        Task<Category> Update(Category category);
         Task<Category> Delete(Guid categoryId);
     }
 }
